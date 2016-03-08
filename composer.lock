@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "326d31e6222a7ea50bef7bad4cea27ab",
-    "content-hash": "14cdfbfe47f4fd5b921ef4add12fd153",
+    "hash": "c1546c70b7b62d689bf4773e1d34abdc",
+    "content-hash": "07c4013cfc291600ccf5f43f5d565326",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1311,17 +1311,41 @@
             "time": "2014-01-12 16:20:24"
         },
         {
+            "name": "koalamon/koalamonintegration",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koalamon/KoalamonIntegrations.git",
+                "reference": "5ee0dad37bd4acc79982dddbb92e65c050cd1acc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koalamon/KoalamonIntegrations/zipball/5ee0dad37bd4acc79982dddbb92e65c050cd1acc",
+                "reference": "5ee0dad37bd4acc79982dddbb92e65c050cd1acc",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "KoalamonIntegration\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "The koalamon integrations",
+            "time": "2016-02-22 08:17:23"
+        },
+        {
             "name": "koalamon/koalamonplatform",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/koalamon/KoalamomPlatform.git",
-                "reference": "bb38c91faa095a5830fa3dba6125b64d381dbf20"
+                "reference": "6de2d5957f68abc3786142d9bf712c3ff00f9c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/koalamon/KoalamomPlatform/zipball/bb38c91faa095a5830fa3dba6125b64d381dbf20",
-                "reference": "bb38c91faa095a5830fa3dba6125b64d381dbf20",
+                "url": "https://api.github.com/repos/koalamon/KoalamomPlatform/zipball/6de2d5957f68abc3786142d9bf712c3ff00f9c82",
+                "reference": "6de2d5957f68abc3786142d9bf712c3ff00f9c82",
                 "shasum": ""
             },
             "require": {
@@ -1351,8 +1375,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Koalamon\\Bundle\\": "src/Koalamon/Bundle",
-                    "Koalamon\\Component\\": "src/Koalamon/Component"
+                    "Koalamon\\": "src/Koalamon/"
                 }
             },
             "description": "The foundation of the koalamon platform",
@@ -1360,7 +1383,55 @@
                 "source": "https://github.com/koalamon/KoalamomPlatform/tree/master",
                 "issues": "https://github.com/koalamon/KoalamomPlatform/issues"
             },
-            "time": "2016-02-18 12:47:57"
+            "time": "2016-02-21 10:53:40"
+        },
+        {
+            "name": "koalamon/leankoalaplatform",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/koalamon/LeanKoalaPlatform.git",
+                "reference": "2e3f524a8c7ccb5f97b2ea33ae9b9da928b94dc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/koalamon/LeanKoalaPlatform/zipball/2e3f524a8c7ccb5f97b2ea33ae9b9da928b94dc1",
+                "reference": "2e3f524a8c7ccb5f97b2ea33ae9b9da928b94dc1",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "~1.4",
+                "doctrine/orm": "^2.4.8",
+                "friendsofsymfony/jsrouting-bundle": "~1.5",
+                "friendsofsymfony/user-bundle": "~2.0@dev",
+                "hwi/oauth-bundle": "0.4.*@dev",
+                "incenteev/composer-parameter-handler": "~2.0",
+                "maknz/slack": "~1.7.0",
+                "php": ">= 5.5.0",
+                "sensio/distribution-bundle": "~4.0",
+                "sensio/framework-extra-bundle": "^3.0.2",
+                "symfony/assetic-bundle": "~2.3",
+                "symfony/monolog-bundle": "~2.4",
+                "symfony/swiftmailer-bundle": "~2.3",
+                "symfony/symfony": "2.7.*",
+                "twig/extensions": "~1.3.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-fixtures-bundle": "^2.3",
+                "heroku/heroku-buildpack-php": "*",
+                "kriswallsmith/buzz": ">=0.5",
+                "phpunit/phpunit": "~4.0",
+                "sensio/generator-bundle": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeanKoala\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "The foundation of the lean koala platform",
+            "time": "2016-02-21 10:52:02"
         },
         {
             "name": "koalamon/notificationbundle",
@@ -2617,7 +2688,9 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "koalamon/notificationbundle": 20,
-        "koalamon/koalamonplatform": 20
+        "koalamon/koalamonplatform": 20,
+        "koalamon/koalamonintegration": 20,
+        "koalamon/leankoalaplatform": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
